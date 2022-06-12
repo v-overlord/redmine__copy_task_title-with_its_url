@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redmine: copy the task title with its url
 // @namespace    https://github.com/v-overlord/redmine__copy_task_title-with_its_url
-// @version      1.0.1
+// @version      1.1
 // @description  Adds an icon that is clicked to copy the link to the clipboard with text/html mime
 // @author       v-overlord
 // @match        https://tracker.egamings.com/*
