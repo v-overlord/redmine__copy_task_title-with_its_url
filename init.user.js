@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redmine: copy the task title with its url
 // @namespace    https://github.com/v-overlord/redmine__copy_task_title-with_its_url
-// @version      1.0
+// @version      1.0.1
 // @description  Adds an icon that is clicked to copy the link to the clipboard with text/html mime
 // @author       v-overlord
 // @match        https://tracker.egamings.com/*
@@ -9,7 +9,7 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
     // .DATA
@@ -60,7 +60,7 @@ position: relative;
             return;
         }
 
-        copy_img_el.addEventListener('click', function(e) {
+        copy_img_el.addEventListener('click', function (e) {
             document.addEventListener("copy", listener);
             copyIconClickHandler.call(this, title_container_el.textContent.trim(), e);
             document.removeEventListener("copy", listener);
