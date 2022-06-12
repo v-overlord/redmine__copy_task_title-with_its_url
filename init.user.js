@@ -95,7 +95,11 @@ position: relative;
             document.body.appendChild(temp_el_to_copy);
         }
 
-        GM_addStyle(COPIED_STYLE);
+        const style = document.createElement('style');
+
+        style.appendChild(document.createTextNode(COPIED_STYLE));
+
+        document.head.appendChild(style);
     }
 
     function set_data(value) {
